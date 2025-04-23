@@ -24,7 +24,7 @@ DEFAULT_DATA_QUALITY_RULESET = """
 AWSGlueDataCatalog_node1745399060571 = glueContext.create_dynamic_frame.from_catalog(database="stedi_lakehouse", table_name="accelerometer_trusted", transformation_ctx="AWSGlueDataCatalog_node1745399060571")
 
 # Script generated for node AWS Glue Data Catalog
-AWSGlueDataCatalog_node1745399058459 = glueContext.create_dynamic_frame.from_catalog(database="stedi_lakehouse", table_name="step_trainer_landing", transformation_ctx="AWSGlueDataCatalog_node1745399058459")
+AWSGlueDataCatalog_node1745399058459 = glueContext.create_dynamic_frame.from_catalog(database="stedi_lakehouse", table_name="step_trainer_trusted", transformation_ctx="AWSGlueDataCatalog_node1745399058459")
 
 # Script generated for node Join
 Join_node1745399104009 = Join.apply(frame1=AWSGlueDataCatalog_node1745399058459, frame2=AWSGlueDataCatalog_node1745399060571, keys1=["sensorreadingtime"], keys2=["timestamp"], transformation_ctx="Join_node1745399104009")
